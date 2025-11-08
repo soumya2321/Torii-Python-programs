@@ -1,0 +1,12 @@
+x=int(input())
+sum=0
+mul=1
+while x>0:
+    num=x%10
+    mul*=num
+    sum+=num
+    x//=10
+if mul==sum:
+    print("Spy Number")
+else:
+    print("Not Spy Number")
